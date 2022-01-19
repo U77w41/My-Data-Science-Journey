@@ -27,25 +27,27 @@ Passionate about different applications of data science. Enjoy reading articles 
 
 
 # Things I have learned throught the course 
+
+
 # Semester 1 topics:
 
-# 1) [DSA](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Data%20Structures%20and%20Algorithms)
+# 1) [Data Structures and Algorithms](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Data%20Structures%20and%20Algorithms)
 
 
 
-# 2)
+# 2) [Linear Algebra for Machine Learning](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Linear%20Algebra%20for%20Machine%20Learning)
 
 
-# 3) 
+# 3) [Optimization for Machine Learning](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Optimization%20for%20Machine%20Learning)
 
 
-# 4)
+# 4) [Probability and Stochastic Processes](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Probability%20and%20Stochastic%20Processes)
 
 
-# 5)
+# 5) [Programming for Data Science](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Programming%20for%20Data%20Science)
 
 
-# 6)
+# 6) [Statistics-1](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Statistics-1)
 
 
 # [Extras]

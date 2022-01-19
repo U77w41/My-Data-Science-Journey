@@ -26,7 +26,7 @@ Passionate about different applications of data science. Enjoy reading articles 
 
 
 
-# Things I have learned throught the course 
+# Things I have learned throughtout the course 
 
 
 # Semester 1 topics:

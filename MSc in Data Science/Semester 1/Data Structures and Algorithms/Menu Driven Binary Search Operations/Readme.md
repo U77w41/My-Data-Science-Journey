@@ -1,4 +1,4 @@
- ## Write a programe to perform the following Menu Driven Binary Search Operations :
+ ## Write a programe to perform the following Menu Driven Binary Search Tree Operations :
  
  1. Insertion
  2. Deletion

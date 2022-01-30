@@ -1,4 +1,5 @@
-##Syllabus:
+## Syllabus
+
 • Statistics: Introduction, Scope, Limitations
 
 • Data:

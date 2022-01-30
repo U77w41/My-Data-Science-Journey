@@ -1,5 +1,6 @@
 
-               Syllabus
+  ##             Syllabus
+  
 Linear Algebra for Machine Learning
 
 

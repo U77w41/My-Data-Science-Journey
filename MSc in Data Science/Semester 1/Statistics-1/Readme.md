@@ -1,8 +1,8 @@
-## Syllabus
+# Syllabus
 
-• Statistics: Introduction, Scope, Limitations
+## • Statistics: Introduction, Scope, Limitations
 
-• Data:
+## • Data:
 
 
 – Types of Data,
@@ -16,7 +16,7 @@
 – Introduction to R libraries: ggplot, dplyr
 
 
-• Descriptive Numerical Measures
+## • Descriptive Numerical Measures
 
 – Measures of Central Tendency
 
@@ -27,7 +27,7 @@
 – Box Plot
 
 
-• Some common distributions and their domain of applications
+## • Some common distributions and their domain of applications
 
 
 – Fitting probability distribution in R, Goodness of fit,
@@ -35,7 +35,7 @@
 – Relationship between different distributions
 
 
-• Sampling:
+## • Sampling:
 
 – Concept of sample and population
 
@@ -44,21 +44,21 @@
 – Types of Sampling
 
 
-• Analysis of bivariate data
+## • Analysis of bivariate data
 
 – Scatter plot
 
 – Correlation (non-robust and robust ways for data with outliers)
 
 
-• Linear Regression
+## • Linear Regression
 
 – Fitting straight lines and other linear models
 
 – Fitting straight lines: Frequentist Approach versus Bayesian Approach
 
 
-• Two-way contingency tables
+## • Two-way contingency tables
 
 – Measures of association
 
@@ -69,7 +69,7 @@
 
 
 
-Books:
+### Books:
 
 • Statistics
 (Authors: David Freedman, Pobert Pisani and Roger Purves)

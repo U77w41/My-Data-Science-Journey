@@ -1,4 +1,4 @@
-# Assignment 6 Question:
+# Assignment 5 Question:
 
 
 1. create a numpy array of 1's  of 4x3x2 of type float16 

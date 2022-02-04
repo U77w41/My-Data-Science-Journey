@@ -1,0 +1,45 @@
+Assignment 5 (Some Answers)
+####################
+#1
+n1 = np.ones((4,3,2),'float16')
+print(n1)
+#2a
+n2a = np.linspace(3,4,24)
+print(n2a)
+n2aa = n2a.reshape((4,3,2),order='F')
+print(n2aa) #notice how the numbers are distributed after reshaping (in column major fashion)
+#2b
+n2b = (n1+n2aa)*2
+print(n2b)
+#3
+n3 = np.array(n2b,dtype='int16')
+print(n3)
+#4
+n4 = n3.reshape((6,4))
+print(n4) #notice how the numbers are distributed after reshaping (in row major fashion)
+#5
+n4 - np.eye(6,4)
+#6
+n6 = np.random.randint(2,100,(6,3))
+print(n6)
+#7
+n6.reshape((18,))[::2]  #accessing alternate elements
+#8
+n8 = np.random.poisson(2,(4,3)) #choose any value for lambda - here chosen 2
+print(n8)
+#9
+n9 = n8[(n8%2==0) | (n8%5==0)]
+print(n9)
+#10a
+row = np.random.randint(0,4,2); print(row)
+col = np.random.randint(0,3,2); print(col)
+#specifying random indexes for row and column positions (integer indexing/fancy indexing)
+n10 = n8[row,col][:,np.newaxis]; print(n10)     
+#11
+n8[[1,3],[1]]
+#12
+n12a = np.linspace(2,20,20); print(n12a)
+n12b = n12a.reshape(2,5,2); print(n12b)
+print("---")
+n12c = n12b.reshape(5,2,2,order='F'); print(n12c)
+

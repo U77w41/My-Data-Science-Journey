@@ -1,0 +1,15 @@
+Inexact Line search in Python
+There are two functions in scipy for line search. The  scipy.optimize.line_search function finds 
+
+α that satisfies strong Wolfe conditions, i.e., it satisfies both first and second Wolfe conditions. . 
+
+See documentation and example in https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.line_search.html
+
+There is another function scipy.optimize.minimize_scalar which performs Minimization of scalar function of one variable using the Golden section method
+
+See documentation and example
+
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize_scalar.html#scipy.optimize.minimize_scalar
+
+
+

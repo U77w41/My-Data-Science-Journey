@@ -1,0 +1,161 @@
+---
+title: "T-Tests & Linear Regression"
+output: pdf_document
+---
+
+# T-Tests and ANOVAs
+
+Today we're going to dive into some statistical capabilities using R....specifically t-tests and ANOVAs. We're going to practice using some code to generate these statistical measures, and use ggplot to create corresponding visualizations. 
+
+
+## t-tests
+
+A t-test is used to  determine if there is a significant difference between the means of two groups, assuming normal distribution in both groups. 
+
+Let's start off by loading the tidyverse, and loading/viewing our penguin data:
+
+
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+
+penguins
+
+```
+
+
+Let's say we want to run a t-test comparing flipper length of Adelie vs Chinstrap penguins. First, we'll use the 'filter' and 'select' functions to limit our data to Adelie & Chinstrap, and only include the species and flipper_length_mm columns:
+
+```{r}
+
+flippers<-penguins %>% filter(species=="Adelie" | species=="Chinstrap") %>% select(species, flipper_length_mm)
+
+
+
+flippers
+
+```
+
+
+Now we can plug this dataset into the t.test function:
+
+
+```{r}
+
+t.test(flipper_length_mm ~ species, data=flippers)
+
+
+```
+
+
+Based upon the output, the p-value is way below 0.05, which is often the threshold for statistical significance. It can be interpreted as: "there is a <p-value> probability that the differences in the mean are due to random chance".
+
+
+YOUR TURN:
+
+Run a t-test comparing the bill length between Gentoo and Adelie penguins. Are the means significantly different?
+
+
+```{r}
+
+
+
+
+```
+
+
+
+## Plots for t-test 
+
+We can use ggplot to generate plots to visualize our data. First, we can try a boxplot:
+
+
+
+```{r}
+ggplot(data=flippers, mapping = aes(species, flipper_length_mm))+geom_boxplot()
+
+
+```
+
+
+
+We can also create a bar plot, though first let's use group_by/summarize to generate the mean valaues for both groups. This is important because normally the geom_bar() function will generate the bar plot based upon the count of each group. But, we can provide explicit y-values to it (in our case, the mean), as long as we use the attribute stat="identity":
+
+
+```{r}
+
+flipper_summary<-flippers%>%na.omit()%>%group_by(species)%>%summarize(avg_flipper_length_mm=mean(flipper_length_mm))
+
+ggplot(data=flipper_summary, mapping = aes(x=species,y=avg_flipper_length_mm, fill=species ))+geom_bar(stat="identity")
+
+
+```
+
+
+
+YOUR TURN:
+
+Generate a box plot and bar plot for your comparison of bill length between Gentoo and Adelie penguins.
+
+```{r}
+
+
+
+
+```
+
+
+
+## ANOVAs
+
+An ANOVA, or Analysis of Variance, compares the means of two or more groups, and provides p-values similar to a t-test. 
+
+Let's run an ANOVA to compare mean bill lenghts among the three species of penguins:
+
+```{r}
+
+bills_aov<-aov(bill_length_mm ~ species, data=penguins)
+
+
+
+summary(bills_aov)
+
+#TukeyHSD(bills_aov)
+
+```
+
+
+The summary statement indicates that there is some statistical significance identified, given the 3 asterisks next to the Pr(>F) value. Of course, the question is "significant between which groups?". We can now use the "TukeyHSD" function to yield that information:
+
+```{r}
+TukeyHSD(bills_aov)
+```
+
+If we run the boxplot command below, it sort of visually confirms the p adj values listed above.
+
+
+```{r}
+ggplot(data=penguins, mapping = aes(species, bill_length_mm))+geom_boxplot()
+```
+
+
+YOUR TURN:
+
+* Use the ANOVA test to check for differences in bill depth among the three species. 
+* Create a bar plot to show the results.
+
+
+```{r}
+
+
+
+
+
+
+
+```
+
+
+
+

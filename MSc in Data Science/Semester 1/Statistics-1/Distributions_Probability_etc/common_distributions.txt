@@ -1,0 +1,46 @@
+01. Bernoulli distribution
+02. Binomial distribution
+03. Poisson distribution
+04. Discrete uniform distribution
+05. Hypergeometric distribution
+06. Geometric distribution
+07. Negative binomial distribution
+
+08. Normal Distribution
+09. Continuous Uniform Distribution
+10. Exponential Distribution
+(Beta and Gamma Functions)
+11. Gamma Distribution
+12. Beta Distribution of First Kind
+13. Beta Distribution of Second Kind
+
+14. Weibull Distribution
+15. Cauchy Distribution
+################################################################
+References:
+
+There are wikipedia pages for all these distribution. 
+Familiarize yours with with basic concepts their and try to 
+derive(using summation algebra, integral calculus) measures 
+for some of the ditributions and check your answer with 
+that given the right hand side box(wiki page).
+
+For the distributions 01 - 13, you can check followings:
+https://egyankosh.ac.in/bitstream/123456789/20496/1/Unit-9.pdf
+https://egyankosh.ac.in/bitstream/123456789/20497/1/Unit-10.pdf
+https://egyankosh.ac.in/bitstream/123456789/20500/1/Unit-11.pdf
+https://egyankosh.ac.in/bitstream/123456789/20503/1/Unit-12.pdf
+https://egyankosh.ac.in/bitstream/123456789/20506/1/Unit-13.pdf
+https://egyankosh.ac.in/bitstream/123456789/20509/1/Unit-14.pdf
+https://egyankosh.ac.in/bitstream/123456789/20510/1/Unit-15.pdf
+https://egyankosh.ac.in/bitstream/123456789/20512/1/Unit-16.pdf
+https://egyankosh.ac.in/bitstream/123456789/20495/1/Unit-8.pdf
+
+
+
+
+
+
+
+
+

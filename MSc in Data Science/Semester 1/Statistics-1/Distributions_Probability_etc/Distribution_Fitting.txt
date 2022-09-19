@@ -1,0 +1,27 @@
+Fitting a probability distribution to data:
+
+Install following R packages:
+
+moments
+car
+lmtest
+fitdistrplus
+MASS
+vcd
+actuar
+###########################################################
+Fitting distributions in R:
+
+http://www.di.fc.ul.pt/~jpn/r/distributions/fitting.html
+http://www-eio.upc.es/teaching/adtl/apunts/TrR_IDA-DF_1.html
+https://daviddalpiaz.github.io/stat3202-au18/notes/fitting.html
+
+
+Theoretical Concepts/Motivations(no programming):
+
+https://www.spcforexcel.com/knowledge/basic-statistics/distribution-fitting
+https://www.spcforexcel.com/knowledge/basic-statistics/deciding-which-distribution-fits-your-data-best
+
+
+You can visit the above links or I have also attached the print versions.
+

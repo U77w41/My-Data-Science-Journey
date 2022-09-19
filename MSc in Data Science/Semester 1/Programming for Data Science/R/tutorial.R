@@ -1,0 +1,581 @@
+## .folder {
+
+## 	color: #3333ff;
+
+##     font-weight: bold;
+
+## }
+
+
+
+
+2+2 
+
+a <- 2+2
+
+a
+
+x <- 5
+y <- 2
+z1 <- x*y
+z2 <- x/y
+z3 <- x^y
+z1; z2; z3
+
+z3 <- 2*x^y
+
+A <- 3
+C <- (A+2*sqrt(A))/(A+5*sqrt(A)); C
+
+C <- A+2*sqrt(A)/A+5*sqrt(A)
+
+## C <- A + 2*(sqrt(A)/A) + 5*sqrt(A)
+
+## ?foo
+
+## help(foo)
+
+## ??sin
+
+Light <- c(20,20,20,20,21,24,44,60,90,94,101)
+rmax <- c(1.73,1.65,2.02,1.89,2.61,1.36,2.37,2.08,2.69,2.32,3.67)
+
+## Light <- 20,20,20,20,21,24,44,60,90,94,101
+
+plot(rmax~Light)
+
+fit <- lm(rmax~Light)
+
+summary(fit)
+
+## abline(fit)
+
+plot(rmax~Light,main="Graphical summary of regression analysis")
+abline(fit)
+
+coef(fit)
+
+## residuals(fit)
+## fitted(fit)
+## effects(fit)
+## vcov(fit)
+## anova(fit)
+
+## install.packages("ggplot2")
+
+## install.packages(c("plyr","reshape2"))
+
+## install.packages("ggplot2",repos=NULL)
+
+x <- c(1,3,5,7,9,11)
+y <- c(6.5,4.3,9.1,-8.5,0,3.6)
+z <- c("dog","cat","dormouse","chinchilla")
+w <- c(a=4,b=5.5,c=8.8)
+length(x)
+mode(y)
+mode(z)
+names(w)
+
+x <- x+1
+xx <- sqrt(x)
+x; xx
+
+x+y
+
+x <- c(1,2,3)
+y <- c(10,20,30,40,50,60)
+x+y
+y-x
+
+1:8
+
+rep(3,5)
+
+rep(1:3,3)
+
+rep(1:3,each=3)
+
+rep(c(3,4),c(2,5))
+
+z <- c(1,3,5,7,9,11); z[3]
+
+v <- z[c(2,3,4,5)]
+
+v <- z[2:5]; v
+
+v <- z[c(1,2,5)]; v
+
+z[1] <- 12
+
+z[c(1,3,5)] <- c(22,33,44)
+
+w
+w["a"]
+w[c("c","b")]
+w["b"] <- 0
+w
+
+## z[9] <- 11
+
+x <- 1.999999; x; x-2
+x <- 1.9999999999999; x; x-2
+x <- 1.99999999999999999; x; x-2
+
+a <- 1; b <- 3; 
+c <- a < b
+d <- (a > b)
+c; d
+
+x <- 1:5; b <- (x<=3); b
+
+a=1:3
+b=2:4
+a==b
+a=b
+a==b
+
+a <- c(1,2,3,4)
+b <- c(1,1,5,5)
+(a<b) | (a>3)
+(a<b) || (a>3)
+
+course.url <- "https://kingaa.github.io/R_Tutorial/"
+X <- read.csv(paste0(course.url,"data/ChlorellaGrowth.csv"),comment.char='#')
+Light <- X[,1]
+rmax <- X[,2];
+lowLight <- Light[Light<50]
+lowLightrmax <- rmax[Light<50]
+lowLight
+lowLightrmax
+
+Light[Light<50 | rmax <= 2.0]
+rmax[Light<50 | rmax <= 2.0]
+
+x <- c(first=7,second=5,third=2)
+names(x)
+x["first"]
+x[c("third","first")]
+x[c('second','first')] <- c(8,9); x
+
+X <- matrix(c(1,2,3,4,5,6),nrow=2,ncol=3); X
+
+A <- matrix(1:9,nrow=3,ncol=3,byrow=TRUE); A
+
+## matrix(1,nrow=50,ncol=50)
+
+print(X <- matrix(rep(c(1,2),times=4),nrow=2))
+
+## A <- matrix(0,3,4)
+## data.entry(A)
+
+C <- cbind(1:3,4:6,5:7); C
+
+D <- rbind(1:3,4:6); D
+
+A[2,2:3]; 
+B <- A[2:3,1:2]; B
+
+first.row <- A[1,]; first.row
+second.column <- A[,2]; second.column;
+
+A[1,1] <- 12; A
+
+A[1,] <- c(2,4,5); A
+
+which(A>=8,arr.ind=TRUE)
+
+X <- array(1:24,dim=c(3,4,2)); X
+
+y <- 1:5; y
+z <- array(1:5,dim=5); z
+y==z
+identical(y,z)
+dim(y); dim(z)
+
+## x <- seq(1,27)
+## dim(x) <- c(3,9)
+## is.array(x)
+## is.matrix(x)
+
+x <- rep(c(1,2),each=3); factor(x)
+trochee <- c("jetpack","ferret","pizza","lawyer")
+trochee <- factor(trochee); trochee
+
+factor(trochee,levels=c("ferret","pizza","cowboy","scrapple"))
+
+set.seed(349585885L)
+x <- ordered(sample(x=letters,size=22,replace=TRUE)); x
+
+x <- ordered(x,levels=rev(letters))
+x[1:5] < x[18:22]
+
+L <- list(A=x,B=trochee,C=c("a","b","c"))
+
+L[c("B","C")]
+
+data.url <- "https://kingaa.github.io/R_Tutorial/data/ChlorellaGrowth.csv"
+dat <- read.csv(data.url,comment.char='#')
+dat
+
+course.url <- "https://kingaa.github.io/R_Tutorial/"
+download.file(paste0(course.url,"Intro1.R"),destfile="Intro1.R",mode="w")
+
+## source("Intro1.R")
+
+download.file(paste0(course.url,"Intro2.R"),destfile="Intro2.R",mode="w")
+download.file(paste0(course.url,"data/ChlorellaGrowth.csv"),destfile="ChlorellaGrowth.csv",mode="w")
+
+X <- read.csv("ChlorellaGrowth.csv",comment.char='#')
+
+Light <- X[,1]
+rmax <- X[,2]
+
+Light <- X$light; rmax <- X$rmax
+logLight <- log(Light)
+op <- par(cex=1.5,cex.main=0.9)
+plot(logLight,rmax,xlab=expression("Log light intensity ("*mu*"E/m"^2*"/s)"),
+     ylab="Maximum growth rate rmax (1/d)",pch=16); 
+title(main="Data from Fussmann et al. (2000) system");
+fit <- lm(rmax~logLight);
+summary(fit); abline(fit); 
+rcoef <- round(coef(fit),digits=3)
+text(3.7,3.5,paste("rmax=",rcoef[1],"+",rcoef[2],"log(Light)"));
+par(op)
+
+phi <- 1
+for (k in 1:100) {
+  phi <- 1+1/phi
+  print(c(k,phi))
+}
+
+a <- 1.1
+b <- 0.001
+T <- seq(from=1,to=200,by=1)
+N <- numeric(length(T))
+n <- 2
+for (t in T) {
+  n <- a*n/(1+b*n)
+  N[t] <- n
+}
+
+plot(T,N)
+
+N <- numeric(length(T))
+for (t in 1:length(T)) {
+  n <- a*n/(1+b*n)
+  N[t] <- n
+}
+
+phi <- 20
+k <- 1
+while (k <= 100) {
+  phi <- 1+1/phi
+  print(c(k,phi))
+  k <- k+1
+}
+
+phi <- 20
+conv <- FALSE
+while (!conv) {
+  phi.new <- 1+1/phi
+  conv <- phi==phi.new
+  phi <- phi.new
+}
+
+phi <- 20
+while (TRUE) {
+  phi.new <- 1+1/phi
+  if (phi==phi.new) break
+  phi <- phi.new
+}
+
+phi <- 3
+for (k in seq_len(1000)) {
+  phi.new <- 1+1/phi
+  if (phi==phi.new) break
+  phi <- phi.new
+}
+
+phi <- 12
+repeat {
+  phi.new <- 1/(1+phi)
+  if (phi==phi.new) break
+  phi <- phi.new
+}
+
+sq <- function (x) x^2
+
+sq(3); sq(9); sq(-2);
+
+f <- function (x, y = 3) {
+  a <- sq(x)
+  a+y
+}
+
+f(3,0); f(2,2); f(3);
+
+function (x) x^5
+(function (x) x^5)(2)
+
+hat <- "hat"
+hattrick <- function (y) {
+  hat <<- "rabbit"
+  2*y
+}
+hat; hattrick(5); hat
+
+hattrick <- function (y) {
+  hat <<- "rabbit"
+  invisible(2*y)
+}
+hattrick(5)
+print(hattrick(5))
+
+formals(hattrick)
+body(hattrick)
+environment(hattrick)
+
+f <- function (x) {
+  y <- 2*x
+  print(x)
+  print(y)
+  print(z)
+}
+
+rm(z)
+## f(3)
+
+z <- 10
+f(3)
+
+z <- 13
+g <- function (x) {
+  2*x+z
+}
+f <- function (x) {
+  z <- -100
+  g(x)
+}
+f(5)  
+
+y <- 11
+f <- function (x) {
+  y <- 2*x
+  y+x
+}
+f(1); y
+
+y <- 0
+f <- function (x) {
+  2*x+y
+}
+f(1); y
+
+g <- function (y) y
+f <- function (x) {
+  g <- function (y) {
+    2*y
+  }
+  11+g(x)
+}
+f(2); g(2)
+
+y <- 11
+f <- function (x) {
+  y <- 22
+  g <- function (x) {
+    x+y
+  }
+  g(x)
+}
+f(1); y
+
+y <- 11
+f <- function (x) {
+  y <- 22
+  g <- function (x) {
+    y <<- 7
+    x+y
+  }
+  c(g(x),y)
+}
+f(1); y
+
+y <- 11
+f <- function (x) {
+  g <- function (x) {
+    x+y
+  }
+  g(x)
+}
+f(1); y
+
+f <- function (x) {
+  y <- 37
+  g <- function (x) {
+    h <- function (x) {
+      x+y
+    }
+    h(x)
+  }
+  g(x)
+}
+f(1); y
+
+rm(y)
+f <- function (x) {
+  g <- function (x) {
+    y <<- 2*x
+    y+1
+  }
+  g(x)+1
+}
+f(11); y
+f(-2); y
+
+f <- function () {
+  g <- function () {
+    h <- function () {
+      cat("inside function h:\n")
+      cat("current env: ")
+      print(environment())
+      cat("parent env: ")
+      print(parent.frame(1))
+      cat("grandparent env: ")
+      print(parent.frame(2))
+      cat("great-grandparent env: ")
+      print(parent.frame(3))
+      invisible(NULL)
+    }
+    cat("inside function g:\n")
+    cat("environment of h: ")
+    print(environment(h))
+    cat("current env: ")
+    print(environment())
+    cat("parent env: ")
+    print(parent.frame(1))
+    cat("grandparent env: ")
+    print(parent.frame(2))
+    h()
+  }
+  cat("inside function f:\n")
+  cat("environment of g: ")
+  print(environment(g))
+  cat("current env: ")
+  print(environment())
+  cat("parent env: ")
+  print(parent.frame(1))
+  g()
+}
+cat("environment of f: "); print(environment(f))
+cat("global env: "); print(environment())
+f()
+
+x <- list("teenage","mutant","ninja","turtle",
+          "hamster","plumber","pickle","baby")
+lapply(x,nchar)
+
+y <- c("teenage","mutant","ninja","turtle",
+       "hamster","plumber","pickle","baby")
+lapply(y,nchar)
+
+x <- list("pizza","monster","jigsaw","puddle",
+          "hamster","plumber","pickle","baby")
+sapply(x,nchar)
+
+y <- c("pizza","monster","jigsaw","puddle",
+       "hamster","plumber","pickle","baby")
+sapply(y,nchar)
+
+x <- c("pizza","monster","jigsaw","puddle")
+y <- c("cowboy","barbie","slumber","party")
+mapply(paste,x,y,sep="/")
+
+mapply(paste,x,y[2:3])
+mapply(paste,x[c(1,3)],y)
+
+A <- array(data=seq_len(15),dim=c(3,5)); A
+
+apply(A,1,sum)
+
+apply(A,2,sum)
+
+A <- array(data=seq_len(30),dim=c(3,5,2)); A
+
+apply(A,c(1,3),sum)
+
+apply(A,3,sum)
+
+apply(A,c(2,3),function (x) sd(x)/sqrt(length(x)))
+
+apply(A,c(1,2),function (x, y) sum(x>y),y=8)
+apply(A,c(1,2),function (x, y) sum(x>y),y=-1)
+
+x <- seq(1,30,by=1)
+b <- rep(letters[1:10],times=3)
+data.frame(x,b)
+tapply(x,b,sum)
+
+b <- rep(letters[1:10],each=3)
+data.frame(x,b)
+tapply(x,b,sum)
+
+datafile <- "https://kingaa.github.io/R_Tutorial/data/seedpred.dat"
+seeds <- read.table(datafile,header=TRUE,
+                    colClasses=c(station='factor',dist='factor',date='Date'))
+x <- subset(seeds,available>0)
+with(x, tapply(tcum,list(dist,station),max,na.rm=TRUE))
+
+alph <- function (x) {
+  stopifnot(x >= 1 && x <= 26)
+  LETTERS[as.integer(x)]
+}
+
+set.seed(1950064303L)
+x <- sample(1:26,50,replace=TRUE)
+y <- vapply(x,alph,character(1))
+paste(y,collapse="")
+
+x <- runif(n=1e6,min=0,max=2*pi)
+y <- numeric(length(x))
+for (k in seq_along(x)) {
+  y[k] <- sin(x[k])
+}
+
+x <- runif(n=1e6,min=0,max=2*pi)
+system.time({
+  y <- numeric(length(x))
+  for (k in seq_along(x)) {
+    y[k] <- sin(x[k])
+  }
+})
+
+system.time(z <- sin(x))
+
+system.time(w <- sapply(x,sin))
+
+x <- seq.int(from=20,to=1e6,by=10)
+f <- function (x) {
+  (((x+1)*x+1)*x+1)*x+1
+}
+system.time({
+  res1 <- numeric(length(x))
+  for (k in seq_along(x)) {
+    res1[k] <- f(x[k])
+  }
+})
+system.time(res2 <- sapply(x,f))
+
+system.time(f(x))
+
+g <- function (x) {
+  if ((x[1] > 30) && (x[1] < 5000)) 1 else 0
+}
+
+system.time({
+  res1 <- numeric(length(x))
+  for (k in seq_along(x)) {
+    res1[k] <- g(x[k])
+  }
+})
+system.time(res2 <- sapply(x,g))

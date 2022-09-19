@@ -1,0 +1,249 @@
+```{r}
+# 1. In a series of games, after eleven games, the Player A has 7 points and the Player B has 4 points. The first person to reach 8 points wins the series of games. 
+#What is the probability that the Player B will win the series?
+# First try to solve it analytically[2 Marks] and then solve it by simulation
+
+# Solution:
+
+fn1 <- function(n){
+    result = c()
+    for(i in 1:n){
+        Player_A = 7 ; Player_B = 4
+        games <- sample(c("A","B"), 4, replace = TRUE)
+        Player_A = Player_A + sum(games == "A")
+        Player_B = Player_B + sum(games == "B")
+        if (Player_A == 8) result[i] = "A"
+        else if (Player_B == 8) result[i] = "B"
+        else result[i] = "X"
+    }
+    P_B <- sum(result == "B")
+    return(P_B/n)
+}
+
+fn1(10000000)
+
+```
+```{r}
+# 2. One of the method to generate normally distributed random numbers (N (µ, σ2)) is the
+# following:
+# (a) Generate two uniform U(0, 1) variates u1 and u2.
+# (b) Let x = − ln u1.
+# (c) If u2 > e−(x−1)2/2 ,go back to step (a).
+# (d) Else generate u3.
+# (e) If u3 > 0.5, return µ + σx; otherwise return µ − σx.
+# Generate 10000 N (µ, σ2) using the above algorithm/method and verify your result.
+
+normal <- function(n, m, s){
+    res = c()
+    for(i in 1:n){
+        repeat{
+            u1 <- runif(1)
+            u2 <- runif(1)
+            x <- -log(u1)
+            if (u2 > exp(-((x-1)^2)/2)) break
+            else u3 <- runif(1)
+            if (u3 > 0.5) res[i] = (m + s*x)
+            else res[i] = (m - s*x)
+        }
+    }
+    return(res)
+}
+
+v <- normal(9000, 0, 1)
+hist(v, prob = T, ylim = c(0,0.6), xlab = "sample",
+     main = "Histogram")
+curve(dnorm(x,0,1), add = T, col = 'blue')
+
+
+```
+
+
+```{r}
+# 3. Generate N = 10000 numbers using a seed of x0 = 1 in the following generator:
+# xn = 75 xn−1 mod (231 − 1). (1)
+# Classify the numbers into n = 20 equal-size cells and test for uniformity using the
+# chi-square test at level of significance α = 0.1 and also find p-value.
+
+lcg <- function(n, seed, a, c, m){
+    rem <- NULL
+    for (i in 1:n) {
+        temp <- seed
+        rem[i] <- ((a*temp) + c) %% m
+        seed <- rem[i]
+    }
+    return(rem)
+}
+
+t <- lcg(n = 10000, seed = 1, a = 7^5, c = 0, m = (2^31-1))
+
+# Counting frequency
+minima <- min(t)
+maxima <- max(t)
+freq <- as.numeric(table(cut(t, breaks = seq(minima, maxima, length.out =21))))
+
+# Chi-square test
+chisq.test(freq)
+
+
+```
+
+
+```{r}
+# 4. An algorithm for generating uniformly distributed random numbers in [2,4) gives following counts/frequencies when the random numbers were collected in 20 equi-spaced
+# bins [2.0,2.1), [2.1,2.2) ... [3.9,4):
+# 52, 55, 58, 59, 65, 43, 73, 43, 50, 48, 53, 45, 50, 47, 45, 39, 42, 43, 40, 50 .
+# (A) Use the chi-square test at the level of significance(α) (i) 0.1, (ii) 0.05 to test for
+# uniformity of the random numbers.
+# (B) Classify the above data into 10 equi-spaced bins and then repeat (A).
+
+data <- c(52,55,58,59,65,43,73,43,50,48,53,45,50,47,45,39,42,43,40,50)
+chisq.test(data)
+
+freq_10 <- data[seq(1,length(data),2)] + data[seq(2,length(data),2)]
+chisq.test(freq_10)
+```
+
+
+```{r}
+# 5. Generate N = 20 numbers using a seed of x0 = 1 in the following generator:
+# xn = (5xn−1 + 1) mod 16 . (2)
+# Perform a Kolmogorov Smirnov(K-S) test and check whether the sequence passes the
+# test at α = 0.10 level of significance
+
+sample <- lcg(n = 20, seed = 1, a = 5, c = 1, m = 16)
+
+ks.test(sample, 'punif', exact = 0)
+ks.test(sample, 'pnorm', exact = 0)
+
+```
+
+
+```{r}
+# 6. Generate random samples from the following distributions and verify the central limit
+# theorem
+# (a) uniform distribution
+# (b) exponential distribution
+# (c) Weibull distribution
+# (d) lognormal distribution .
+
+# uniform distrbution
+uniform <- function(nsim, n, minimum , maximum){
+    xbar = array(0, dim = nsim)
+    for (i in 1:nsim){
+        xbar[i] = mean(runif(n = n, min = minimum, max = maximum))
+    } 
+    mu <- (minimum + maximum)/2
+    sigma <- sqrt(((maximum-minimum)^2)/12)
+    s_xbar = sigma/sqrt(n)
+    hist(xbar, prob = TRUE, 
+         main = "Histogram of sample means", 
+         xlab = "Sample means")
+    curve(dnorm(x, mean = mu, sd = s_xbar), add = T, col = 'red')
+}
+
+uniform(10000,100,2,4)
+
+# exponential distrbution
+exponential <- function(nsim, n, lambda){
+    xbar = array(0, dim = nsim)
+    for (i in 1:nsim){
+        xbar[i] = mean(rexp(n = n, rate = lambda))
+    } 
+    mu <- 1/lambda
+    sigma <- 1/lambda
+    s_xbar = sigma/sqrt(n)
+    hist(xbar, prob = TRUE, 
+         main = "Histogram of sample means", 
+         xlab = "Sample means")
+    curve(dnorm(x, mean = mu, sd = s_xbar), add = T, col = 'red')
+}
+
+exponential(10000,100,3)
+
+# weibull distribution
+weibull <- function(nsim, n, lambda, k){
+    xbar = array(0, dim = nsim)
+    for (i in 1:nsim){
+        xbar[i] = mean(rweibull(n = n, shape = k, scale = lambda))
+    } 
+    mu <- lambda*gamma(1+(1/k))
+    sigma <- lambda*sqrt(gamma(1+(2/k)) - (gamma(1+(1/k)))^2)
+    s_xbar = sigma/sqrt(n)
+    hist(xbar, prob = TRUE,
+         main = "Histogram of sample means", 
+         xlab = "Sample means")
+    curve(dnorm(x, mean = mu, sd = s_xbar), add = T, col = 'red')
+}
+
+weibull(10000,100,5,1)
+
+# lognormal distribution
+lognormal <- function(nsim, n, mean_log, sd_log){
+    xbar = array(0, dim = nsim)
+    for (i in 1:nsim){
+        xbar[i] = mean(rlnorm(n, mean_log, sd_log))
+    } 
+    mu <- exp(mean_log + (sd_log^2)/2)
+    sigma <- sqrt((exp(sd_log^2)-1)*exp((2*mean_log)+(sd_log^2)))
+    s_xbar <- sigma/sqrt(n)
+    hist(xbar, prob = TRUE, 
+         main = "Histogram of sample means", 
+         xlab = "Sample means")
+    curve(dnorm(x, mean = mu, sd = s_xbar), add = T, col = 'red')
+}
+
+lognormal(10000,30,5,0.5)
+
+```
+
+
+```{r}
+```
+
+
+```{r}
+# 9. Calculate Karl Pearson’s coefficient of correlation(r, defined in the Eq. (3)) between
+# price and demand for the following data:
+# Price 17 18 19 20 22 24 26 28 30
+# Demand 40 38 35 30 28 25 22 21 20
+# Also for the above dataset define let’s Price1 = (Price - p)/u and Demand1 = (Demand- q)/v, where p, q, u and v are arbitrary numbers(choose these numbers as you wish),
+# then calculate Karl Pearson’s coefficient of correlation(r) between Price1 and Demand1
+
+
+
+
+r <- function(x,y){
+    mx <- mean(x)
+    my <- mean(y)
+    cov <- sum((x-mx)*(y-my))
+    sx <- sqrt(sum((x-mx)^2))
+    sy <- sqrt(sum((y-my)^2))
+    return(cov/(sx*sy))
+}
+price <- c(17,18,19,20,22,24,26,28,30)
+demand <- c(40,38,35,30,28,25,22,21,20)
+r(price, demand)
+cor(price, demand)
+
+
+```
+
+
+```{r}
+# 10. Find the Spearman’s rank correlation coefficient for the dataset of problem 9.
+
+
+
+cor(price, demand, method = 'spearman')
+```
+
+
+```{r}
+```
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.

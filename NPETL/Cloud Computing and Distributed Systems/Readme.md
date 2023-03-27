@@ -51,3 +51,12 @@
 1. Distributed Algorithms-Nancy Lynch
 2. Cloud Computing Bible, Barrie Sosinsky, Wiley-India, 2010
 3. Cloud Computing: Principles, Systems and Applications, Editors: Nikos Antonopoulos, Lee Gillam, Springer, 2012
+
+
+
+## Final Exam Number Distribution
+| Section       | Number of Questions| Marks     |
+| ------------- | ------------- | -------------- |
+| Section I     | 20            | 20             |
+| Section II    | 15            | 30             |
+| Section III   | 25            | 50             |

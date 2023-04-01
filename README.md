@@ -50,4 +50,7 @@ Passionate about different applications of data science. Enjoy reading articles 
 # 6) [Statistics-1](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Statistics-1)
 
 
+
+# Semester 2 topics:
+
 # [Extras]

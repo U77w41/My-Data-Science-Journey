@@ -31,23 +31,23 @@ Passionate about different applications of data science. Enjoy reading articles 
 
 # Semester 1 topics:
 
-### 1) [Data Structures and Algorithms](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Data%20Structures%20and%20Algorithms)
+### 1) [Data Structures and Algorithms](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%201/Data%20Structures%20and%20Algorithms)
 
 
 
-### 2) [Linear Algebra for Machine Learning](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Linear%20Algebra%20for%20Machine%20Learning)
+### 2) [Linear Algebra for Machine Learning](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%201/Linear%20Algebra%20for%20Machine%20Learning)
 
 
-### 3) [Optimization for Machine Learning](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Optimization%20for%20Machine%20Learning)
+### 3) [Optimization for Machine Learning](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%201/Optimization%20for%20Machine%20Learning)
 
 
 ### 4) [Probability and Stochastic Processes](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Probability%20and%20Stochastic%20Processes)
 
 
-### 5) [Programming for Data Science](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Programming%20for%20Data%20Science)
+### 5) [Programming for Data Science](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%201/Probability%20and%20Stochastic%20Processes)
 
 
-### 6) [Statistics-1](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Statistics-1)
+### 6) [Statistics-1](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%201/Statistics-1)
 
 
 

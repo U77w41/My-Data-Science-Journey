@@ -53,4 +53,21 @@ Passionate about different applications of data science. Enjoy reading articles 
 
 # Semester 2 topics:
 
+# 1) [CDS](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%202/CDS)
+
+
+
+# 2) [Computer Vision](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%202/Computer%20Vision)
+
+
+# 3) [Machine Learning](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Optimization%20for%20Machine%20Learning)
+
+
+# 4) [Statistics 2](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%202/Statistics%202)
+
+
+# 5) [Time Series & Survival Analysis](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%202/Time%20Series%20%26%20Survival%20Analysis)
+
+
+
 # [Extras]

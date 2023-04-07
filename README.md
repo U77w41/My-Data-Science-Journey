@@ -56,7 +56,6 @@ Passionate about different applications of data science. Enjoy reading articles 
 ### 1) [CDS](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%202/CDS)
 
 
-
 ### 2) [Computer Vision](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%202/Computer%20Vision)
 
 
@@ -76,6 +75,6 @@ Passionate about different applications of data science. Enjoy reading articles 
 ### 1) [Multivariate Statistics](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%203/Multivariate%20Statistics)
 
 
-
+### 1) [Data Mining](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%203/Multivariate%20Statistics)
 
 # [Extras]

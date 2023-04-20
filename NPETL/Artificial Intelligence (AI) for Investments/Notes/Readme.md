@@ -1,7 +1,5 @@
 <h1 style="text-align: center;">
- ============================
- |         Week 1           |
- ============================
+ ======================= Week 1 =======================
 </h1>
 
 
@@ -164,8 +162,9 @@
 - What is the nature of the evidence against market efficiency?
 - What do we understand from investor psychology and behavioral finance?
 
-
-<p style="text-align: center;">=================================Week 2=================================</p>
+<h1 style="text-align: center;">
+ ======================= Week 2 =======================
+</h1>
 
 # Lesson 01 : Introduction and Background to Probability Theory
 

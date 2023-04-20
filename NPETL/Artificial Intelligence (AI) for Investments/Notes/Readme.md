@@ -682,3 +682,53 @@
 - What do we understand from overbought and oversold levels and their crossovers?
 - What do we understand from momentum and price divergence?
 
+
+<p style="text-align: center;">=================================Week 11=================================</p>
+
+# Lesson 01 : Regression Modelling
+
+## The lecture covers the following concepts:
+
+Introduction to Regression Algorithm
+Types of Data
+Introduction to Simple Linear Regression
+Expectations Operator
+Population and Sample Regression Function
+Ordinary Least Square (OLS) Estimation
+Introduction to Multiple Linear Regression
+Key assumptions with classical linear regression model (CLRM)
+BLUE Properties of OLS Estimators
+
+
+## Self-Assessment Questions:
+
+What do we understand from the regression algorithm?
+What are the different types of data employed in regression modeling?
+What do we understand from simple and multiple linear regression?
+What is the difference between population and sample regression function?
+What is the OLS method of estimation for regression coefficients?
+What are the key CLRM assumptions?
+What do we understand from BLUE properties of OLS estimators?
+
+
+# Lesson 02 : Regression Algorithm: Application
+
+## The lecture covers the following concepts:
+
+Data input and visualization
+Examining normality and stationarity of data
+Training simple and multiple linear regression algorithms with data
+Conducting model diagnostics with the trained algorithm
+Making predictions with regression algorithms
+Examining the out-of-sample forecasting efficiency of the model
+
+
+## Self-Assessment Questions:
+
+How to input, visualize, and summarize the financial market data with R?
+How to examine the normality and stationarity of the data with R?
+How train the regression algorithm on a given test data?
+How to conduct trained model diagnostics for issues such as heteroscedasticity, autocorrelation, multicollinearity, etc?
+How to examine the out-of-sample forecasting efficiency of a regression model?
+
+

@@ -715,47 +715,47 @@
 
 ## The lecture covers the following concepts:
 
-Introduction to Regression Algorithm
-Types of Data
-Introduction to Simple Linear Regression
-Expectations Operator
-Population and Sample Regression Function
-Ordinary Least Square (OLS) Estimation
-Introduction to Multiple Linear Regression
-Key assumptions with classical linear regression model (CLRM)
-BLUE Properties of OLS Estimators
+- Introduction to Regression Algorithm
+- Types of Data
+- Introduction to Simple Linear Regression
+- Expectations Operator
+- Population and Sample Regression Function
+- Ordinary Least Square (OLS) Estimation
+- Introduction to Multiple Linear Regression
+- Key assumptions with classical linear regression model (CLRM)
+- BLUE Properties of OLS Estimators
 
 
 ## Self-Assessment Questions:
 
-What do we understand from the regression algorithm?
-What are the different types of data employed in regression modeling?
-What do we understand from simple and multiple linear regression?
-What is the difference between population and sample regression function?
-What is the OLS method of estimation for regression coefficients?
-What are the key CLRM assumptions?
-What do we understand from BLUE properties of OLS estimators?
+- What do we understand from the regression algorithm?
+- What are the different types of data employed in regression modeling?
+- What do we understand from simple and multiple linear regression?
+- What is the difference between population and sample regression function?
+- What is the OLS method of estimation for regression coefficients?
+- What are the key CLRM assumptions?
+- What do we understand from BLUE properties of OLS estimators?
 
 
 # Lesson 02 : Regression Algorithm: Application
 
 ## The lecture covers the following concepts:
 
-Data input and visualization
-Examining normality and stationarity of data
-Training simple and multiple linear regression algorithms with data
-Conducting model diagnostics with the trained algorithm
-Making predictions with regression algorithms
-Examining the out-of-sample forecasting efficiency of the model
+- Data input and visualization
+- Examining normality and stationarity of data
+- Training simple and multiple linear regression algorithms with data
+- Conducting model diagnostics with the trained algorithm
+- Making predictions with regression algorithms
+- Examining the out-of-sample forecasting efficiency of the model
 
 
 ## Self-Assessment Questions:
 
-How to input, visualize, and summarize the financial market data with R?
-How to examine the normality and stationarity of the data with R?
-How train the regression algorithm on a given test data?
-How to conduct trained model diagnostics for issues such as heteroscedasticity, autocorrelation, multicollinearity, etc?
-How to examine the out-of-sample forecasting efficiency of a regression model?
+- How to input, visualize, and summarize the financial market data with R?
+- How to examine the normality and stationarity of the data with R?
+- How train the regression algorithm on a given test data?
+- How to conduct trained model diagnostics for issues such as heteroscedasticity, autocorrelation, multicollinearity, etc?
+- How to examine the out-of-sample forecasting efficiency of a regression model?
 
 <h1 style="text-align: center;">
  ======================= Week 12 =======================
@@ -765,40 +765,40 @@ How to examine the out-of-sample forecasting efficiency of a regression model?
 
 ## The lecture covers the following concepts:
 
-Introduction to Classification Algorithms
-Linear Probability Model (LPM)
-Issues with LPM
-Introduction to Logit Model
-Understanding the Logit Function
-Thresholding / Classification Matrix/ Receiver Operating Characteristic (ROC) Curve
-Probit Model/Maximum Likelihood Estimate/Goodness-of-Fit Measures
+- Introduction to Classification Algorithms
+- Linear Probability Model (LPM)
+- Issues with LPM
+- Introduction to Logit Model
+- Understanding the Logit Function
+- Thresholding / Classification Matrix/ Receiver Operating Characteristic (ROC) Curve
+- Probit Model/Maximum Likelihood Estimate/Goodness-of-Fit Measures
 
 
 ## Self-Assessment Questions:
-What do we understand from the linear probability models  (LPM)?
-What do we understand from Logit/Probit class of models, and how they differ from LPM?
-What is the logit function?
-How to apply thresholding, classification matrix, and ROC curve in examining the performance of Logit/Probit models?
-What are the challenges with the conventional goodness-of-fit measures in the case of Logit/Probit models?
-How Logit/Probit model coefficients are estimated?
+- What do we understand from the linear probability models  (LPM)?
+- What do we understand from Logit/Probit class of models, and how they differ from LPM?
+- What is the logit function?
+- How to apply thresholding, classification matrix, and ROC curve in examining the performance of Logit/Probit models?
+- What are the challenges with the conventional goodness-of-fit measures in the case of Logit/Probit models?
+- How Logit/Probit model coefficients are estimated?
 
 
 # Lesson 02 : Classification Algorithms: Application
 
 ## The lecture covers the following concepts:
 
-Data input and visualization
-Training the LPM Model
-Training the Logit/Probit Algorithms
-Examine the model performance with the sample data
-Making predictions and examining the out-of-sample forecasting efficiency of the logit/probit models
+- Data input and visualization
+- Training the LPM Model
+- Training the Logit/Probit Algorithms
+- Examine the model performance with the sample data
+- Making predictions and examining the out-of-sample forecasting efficiency of the logit/probit models
 
 
 ## Self-Assessment Questions:
 
-How to input and visualize the data in R?
-How to train a simple LPM model in R?
-How to train logit/probit algorithms in R?
-How to examine the performance of the trained algorithm with the sample data?
-How to make out-of-sample forecasts and examine the efficiency of these forecasts using financial market data in R?
+- How to input and visualize the data in R?
+- How to train a simple LPM model in R?
+- How to train logit/probit algorithms in R?
+- How to examine the performance of the trained algorithm with the sample data?
+- How to make out-of-sample forecasts and examine the efficiency of these forecasts using financial market data in R?
 

@@ -41,7 +41,7 @@ Passionate about different applications of data science. Enjoy reading articles 
 ### 3) [Optimization for Machine Learning](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%201/Optimization%20for%20Machine%20Learning)
 
 
-### 4) [Probability and Stochastic Processes](https://github.com/U77w41/My-Data-Science-Journey/tree/main/Probability%20and%20Stochastic%20Processes)
+### 4) [Probability and Stochastic Processes](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%201/Probability%20and%20Stochastic%20Processes)
 
 
 ### 5) [Programming for Data Science](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%201/Probability%20and%20Stochastic%20Processes)

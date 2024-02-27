@@ -1,4 +1,4 @@
-The field of Big Data Analytics lies at the intersection of statistics, mathematics, computer science and engineering. In recent years, development of sophisticated learning algorithms coupled with the availability of massive datasets and facilitated by powerful and efficient computing infrastructures, have led to pioneering improvements in the field of analytical applications.
+The field of ***Big Data Analytics*** lies at the intersection of statistics, mathematics, computer science and engineering. In recent years, development of sophisticated learning algorithms coupled with the availability of massive datasets and facilitated by powerful and efficient computing infrastructures, have led to pioneering improvements in the field of analytical applications.
 
 
 RKMVERI offers a two year (four semester) MSc degree programme in Big Data Analytics. The curriculum encompasses topics from  Mathematics, Statistics, Economics and Computer Science and Engineering.

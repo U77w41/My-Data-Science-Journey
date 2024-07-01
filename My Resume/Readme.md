@@ -1,1 +1,2 @@
-![My Resume](https://github.com/U77w41/My-Data-Science-Journey/blob/main/My%20Resume/Image_Resemue_.jpg)
+![My Resume](Ujjwal_Chowdhury_Resume_July2024_page-0001.jpg)
+![My Resume](Ujjwal_Chowdhury_Resume_July2024_page-0002.jpg)

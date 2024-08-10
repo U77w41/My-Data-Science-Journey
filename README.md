@@ -29,7 +29,7 @@ Passionate about different applications of data science. Enjoy reading articles 
 # Things I have learned throughtout the course 
 
 
-# Semester 1 topics:
+## Semester 1 topics:
 
 ### 1) [Data Structures and Algorithms](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%201/Data%20Structures%20and%20Algorithms)
 
@@ -51,7 +51,7 @@ Passionate about different applications of data science. Enjoy reading articles 
 
 
 
-# Semester 2 topics:
+## Semester 2 topics:
 
 ### 1) [CDS](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%202/CDS)
 
@@ -70,7 +70,7 @@ Passionate about different applications of data science. Enjoy reading articles 
 
 
 
-# Semester 3 topics:
+## Semester 3 topics:
 
 ### 1) [Multivariate Statistics](https://github.com/U77w41/My-Data-Science-Journey/tree/main/MSc%20in%20Data%20Science/Semester%203/Multivariate%20Statistics)
 
